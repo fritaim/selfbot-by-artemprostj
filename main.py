@@ -183,7 +183,7 @@ async def help(ctx, cat=None):
 		await ctx.message.edit(content=f'**__Selfbot by artemprostj__\n\n:x: Напишите `{pref}help` для просмотра всех категорий команд**')
 @bot.command(name='bot', aliases=['selfbot', 'бот', 'селфбот'])
 async def __bot(ctx):
-	await ctx.message.edit(content='**__Selfbot by artemprostj__\n\nСсылка: https://github.com/Its-artemprostj/Discord-Selfbot **')
+	await ctx.message.edit(content='**__Selfbot by artemprostj__\n\nСсылка: https://github.com/fritaim/selfbot-by-artemprostj **')
 @bot.command(aliases=['перезагрузка', 'стоп', 'перезагрузить', 'stop_all', 'остановить', 'reload'])
 async def stopall(ctx):
 	await ctx.message.edit(content=f'**__Selfbot by artemprostj__\n\nПерезагружаю селфбота...**')
