@@ -15,7 +15,7 @@
 		"nuke_commands": true,
 		"disco_status": false,
 		"show_notifications": true,
-		"auto_send_text": " crash-by-mainwars @everyone @here ",
+		"auto_send_text": " crash-by-sshnodes @everyone @here ",
 		"auto_send_channel": 0
 	}
 }
